@@ -7,8 +7,8 @@ services:
   - type: web
     name: mysite
     env: ruby
-    buildCommand: "./backend/bin/render-build.sh"
-    startCommand: "cd backend && bundle exec puma -C config/puma.rb"
+    buildCommand: "cd backend && ./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
