@@ -1,0 +1,44 @@
+.navbar{
+    background-color: aliceblue;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    height: 4em;
+    }
+
+.nav-container{
+    width: 90%;
+    
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+}
+
+.nav-menu{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3em;
+    align-items: baseline;
+    margin: 0;
+}
+
+.app-title{
+    font-size: 2.3em;
+    font-weight: bolder;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.8);
+    font-family: 'Brush Script MT', cursive;
+}
+
+.nav-elements{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.profile-menu{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.8);
+}
+

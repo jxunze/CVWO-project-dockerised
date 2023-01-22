@@ -1,0 +1,324 @@
+I, [2023-01-22T18:34:27.298880 #55975]  INFO -- : [2300dfd9-8970-42de-8075-52b5ac2e38f9] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:34:27 +0800
+I, [2023-01-22T18:34:27.305178 #55975]  INFO -- : [2300dfd9-8970-42de-8075-52b5ac2e38f9] Processing by UsersController#login as JSON
+I, [2023-01-22T18:34:27.305403 #55975]  INFO -- : [2300dfd9-8970-42de-8075-52b5ac2e38f9]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:34:27.319719 #55975]  INFO -- : [2300dfd9-8970-42de-8075-52b5ac2e38f9] Completed 500 Internal Server Error in 14ms (Allocations: 1559)
+F, [2023-01-22T18:34:27.324272 #55975] FATAL -- : [2300dfd9-8970-42de-8075-52b5ac2e38f9]   
+[2300dfd9-8970-42de-8075-52b5ac2e38f9] ActiveRecord::NoDatabaseError (We could not find your database: flatiron_mod3_production. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+[2300dfd9-8970-42de-8075-52b5ac2e38f9]   
+[2300dfd9-8970-42de-8075-52b5ac2e38f9] app/controllers/concerns/users_controller.rb:21:in `login'
+I, [2023-01-22T18:34:43.681092 #55975]  INFO -- : [35127cc4-c252-46fd-b006-854d578fdc9e] Started POST "/users" for 127.0.0.1 at 2023-01-22 18:34:43 +0800
+I, [2023-01-22T18:34:43.683947 #55975]  INFO -- : [35127cc4-c252-46fd-b006-854d578fdc9e] Processing by UsersController#create as JSON
+I, [2023-01-22T18:34:43.684102 #55975]  INFO -- : [35127cc4-c252-46fd-b006-854d578fdc9e]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]", "first_name"=>"Jin", "last_name"=>"Xunze"}}
+I, [2023-01-22T18:34:43.693855 #55975]  INFO -- : [35127cc4-c252-46fd-b006-854d578fdc9e] Completed 500 Internal Server Error in 10ms (Allocations: 1119)
+F, [2023-01-22T18:34:43.695285 #55975] FATAL -- : [35127cc4-c252-46fd-b006-854d578fdc9e]   
+[35127cc4-c252-46fd-b006-854d578fdc9e] ActiveRecord::NoDatabaseError (We could not find your database: flatiron_mod3_production. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+[35127cc4-c252-46fd-b006-854d578fdc9e]   
+[35127cc4-c252-46fd-b006-854d578fdc9e] app/controllers/concerns/users_controller.rb:15:in `create'
+I, [2023-01-22T18:34:46.643772 #55975]  INFO -- : [91a556f7-a9dd-4dd0-9ad7-45d13702f161] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:34:46 +0800
+I, [2023-01-22T18:34:46.645899 #55975]  INFO -- : [91a556f7-a9dd-4dd0-9ad7-45d13702f161] Processing by UsersController#login as JSON
+I, [2023-01-22T18:34:46.646433 #55975]  INFO -- : [91a556f7-a9dd-4dd0-9ad7-45d13702f161]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:34:46.653788 #55975]  INFO -- : [91a556f7-a9dd-4dd0-9ad7-45d13702f161] Completed 500 Internal Server Error in 7ms (Allocations: 1057)
+F, [2023-01-22T18:34:46.654908 #55975] FATAL -- : [91a556f7-a9dd-4dd0-9ad7-45d13702f161]   
+[91a556f7-a9dd-4dd0-9ad7-45d13702f161] ActiveRecord::NoDatabaseError (We could not find your database: flatiron_mod3_production. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+[91a556f7-a9dd-4dd0-9ad7-45d13702f161]   
+[91a556f7-a9dd-4dd0-9ad7-45d13702f161] app/controllers/concerns/users_controller.rb:21:in `login'
+I, [2023-01-22T18:35:54.993356 #56179]  INFO -- : Migrating to CreateUsers (20210227215808)
+I, [2023-01-22T18:35:55.010702 #56179]  INFO -- : Migrating to AddUserToPosts (20230101062800)
+I, [2023-01-22T18:35:55.034260 #56179]  INFO -- : Migrating to AddUserToComments (20230101062823)
+I, [2023-01-22T18:35:55.042736 #56179]  INFO -- : Migrating to AddPostToComments (20230101062838)
+I, [2023-01-22T18:37:44.967113 #56774]  INFO -- : [921cb3dd-9d01-4c16-94ce-b28ba8351bb2] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:37:44 +0800
+I, [2023-01-22T18:37:44.974031 #56774]  INFO -- : [921cb3dd-9d01-4c16-94ce-b28ba8351bb2] Processing by UsersController#login as JSON
+I, [2023-01-22T18:37:44.974296 #56774]  INFO -- : [921cb3dd-9d01-4c16-94ce-b28ba8351bb2]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:37:45.026115 #56774]  INFO -- : [921cb3dd-9d01-4c16-94ce-b28ba8351bb2] Completed 401 Unauthorized in 51ms (Views: 2.3ms | ActiveRecord: 20.1ms | Allocations: 5891)
+I, [2023-01-22T18:37:53.226463 #56774]  INFO -- : [7802516f-c7af-4f23-81d2-0832a9b02fa4] Started POST "/users" for 127.0.0.1 at 2023-01-22 18:37:53 +0800
+I, [2023-01-22T18:37:53.230110 #56774]  INFO -- : [7802516f-c7af-4f23-81d2-0832a9b02fa4] Processing by UsersController#create as JSON
+I, [2023-01-22T18:37:53.230345 #56774]  INFO -- : [7802516f-c7af-4f23-81d2-0832a9b02fa4]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]", "first_name"=>"Xunze", "last_name"=>"Jin"}}
+I, [2023-01-22T18:37:53.565326 #56774]  INFO -- : [7802516f-c7af-4f23-81d2-0832a9b02fa4] Completed 201 Created in 335ms (Views: 4.0ms | ActiveRecord: 9.2ms | Allocations: 5470)
+I, [2023-01-22T18:37:56.155842 #56774]  INFO -- : [eb658767-1e3b-430d-9717-fe324bc84f93] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:37:56 +0800
+I, [2023-01-22T18:37:56.157161 #56774]  INFO -- : [eb658767-1e3b-430d-9717-fe324bc84f93] Processing by UsersController#login as JSON
+I, [2023-01-22T18:37:56.157222 #56774]  INFO -- : [eb658767-1e3b-430d-9717-fe324bc84f93]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:37:56.436503 #56774]  INFO -- : [eb658767-1e3b-430d-9717-fe324bc84f93] Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.6ms | Allocations: 1267)
+F, [2023-01-22T18:37:56.436899 #56774] FATAL -- : [eb658767-1e3b-430d-9717-fe324bc84f93]   
+[eb658767-1e3b-430d-9717-fe324bc84f93] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[eb658767-1e3b-430d-9717-fe324bc84f93]   
+[eb658767-1e3b-430d-9717-fe324bc84f93] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:38:06.532855 #56774]  INFO -- : [d6e0d73b-ff5f-40c4-bcc9-6700de02c94a] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:38:06 +0800
+I, [2023-01-22T18:38:06.536173 #56774]  INFO -- : [d6e0d73b-ff5f-40c4-bcc9-6700de02c94a] Processing by UsersController#login as JSON
+I, [2023-01-22T18:38:06.536278 #56774]  INFO -- : [d6e0d73b-ff5f-40c4-bcc9-6700de02c94a]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:38:06.818478 #56774]  INFO -- : [d6e0d73b-ff5f-40c4-bcc9-6700de02c94a] Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.7ms | Allocations: 1072)
+F, [2023-01-22T18:38:06.818881 #56774] FATAL -- : [d6e0d73b-ff5f-40c4-bcc9-6700de02c94a]   
+[d6e0d73b-ff5f-40c4-bcc9-6700de02c94a] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[d6e0d73b-ff5f-40c4-bcc9-6700de02c94a]   
+[d6e0d73b-ff5f-40c4-bcc9-6700de02c94a] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:46:18.356061 #57935]  INFO -- : [11f32d8f-462e-415d-a676-cc1c2b846924] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:46:18 +0800
+I, [2023-01-22T18:46:18.362192 #57935]  INFO -- : [11f32d8f-462e-415d-a676-cc1c2b846924] Processing by UsersController#login as JSON
+I, [2023-01-22T18:46:18.362426 #57935]  INFO -- : [11f32d8f-462e-415d-a676-cc1c2b846924]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:46:18.717007 #57935]  INFO -- : [11f32d8f-462e-415d-a676-cc1c2b846924] Completed 500 Internal Server Error in 354ms (ActiveRecord: 23.8ms | Allocations: 10503)
+F, [2023-01-22T18:46:18.720170 #57935] FATAL -- : [11f32d8f-462e-415d-a676-cc1c2b846924]   
+[11f32d8f-462e-415d-a676-cc1c2b846924] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[11f32d8f-462e-415d-a676-cc1c2b846924]   
+[11f32d8f-462e-415d-a676-cc1c2b846924] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:46:20.083929 #57935]  INFO -- : [ca6fe118-b577-427f-a310-6497426c0897] Started GET "/profile" for 127.0.0.1 at 2023-01-22 18:46:20 +0800
+I, [2023-01-22T18:46:20.084844 #57935]  INFO -- : [ca6fe118-b577-427f-a310-6497426c0897] Processing by UsersController#user_profile as */*
+I, [2023-01-22T18:46:20.085947 #57935]  INFO -- : [ca6fe118-b577-427f-a310-6497426c0897] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 912)
+F, [2023-01-22T18:46:20.086360 #57935] FATAL -- : [ca6fe118-b577-427f-a310-6497426c0897]   
+[ca6fe118-b577-427f-a310-6497426c0897] NoMethodError (undefined method `[]' for nil:NilClass
+
+                @user_id = JWT.decode(user_token, Rails.application.secrets.secret_key_base[0])[0]["user_id"]
+                                                                                           ^^^):
+[ca6fe118-b577-427f-a310-6497426c0897]   
+[ca6fe118-b577-427f-a310-6497426c0897] app/controllers/concerns/application_controller.rb:18:in `current_user'
+[ca6fe118-b577-427f-a310-6497426c0897] app/controllers/concerns/application_controller.rb:10:in `is_signed_in'
+[ca6fe118-b577-427f-a310-6497426c0897] app/controllers/concerns/application_controller.rb:6:in `is_authorized'
+I, [2023-01-22T18:46:26.168789 #57935]  INFO -- : [a91f663d-69fb-4656-86df-12d4849035b7] Started POST "/users" for 127.0.0.1 at 2023-01-22 18:46:26 +0800
+I, [2023-01-22T18:46:26.170559 #57935]  INFO -- : [a91f663d-69fb-4656-86df-12d4849035b7] Processing by UsersController#create as JSON
+I, [2023-01-22T18:46:26.170628 #57935]  INFO -- : [a91f663d-69fb-4656-86df-12d4849035b7]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]", "first_name"=>"Xunze", "last_name"=>"Jin"}}
+I, [2023-01-22T18:46:26.450088 #57935]  INFO -- : [a91f663d-69fb-4656-86df-12d4849035b7] Completed 201 Created in 279ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1509)
+I, [2023-01-22T18:46:26.575036 #57935]  INFO -- : [2028b728-403e-4ec4-bd00-3ca3b66680a9] Started GET "/posts?order=0&search=" for 127.0.0.1 at 2023-01-22 18:46:26 +0800
+I, [2023-01-22T18:46:26.575867 #57935]  INFO -- : [2028b728-403e-4ec4-bd00-3ca3b66680a9] Processing by PostsController#index as */*
+I, [2023-01-22T18:46:26.575908 #57935]  INFO -- : [2028b728-403e-4ec4-bd00-3ca3b66680a9]   Parameters: {"order"=>"0", "search"=>""}
+I, [2023-01-22T18:46:26.582218 #57935]  INFO -- : [2028b728-403e-4ec4-bd00-3ca3b66680a9] Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 2.6ms | Allocations: 1429)
+I, [2023-01-22T18:46:28.155228 #57935]  INFO -- : [a3a14a82-76cd-4379-9032-f081ea3a2efd] Started GET "/profile" for 127.0.0.1 at 2023-01-22 18:46:28 +0800
+I, [2023-01-22T18:46:28.156090 #57935]  INFO -- : [a3a14a82-76cd-4379-9032-f081ea3a2efd] Processing by UsersController#user_profile as */*
+I, [2023-01-22T18:46:28.157368 #57935]  INFO -- : [a3a14a82-76cd-4379-9032-f081ea3a2efd] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 866)
+F, [2023-01-22T18:46:28.158523 #57935] FATAL -- : [a3a14a82-76cd-4379-9032-f081ea3a2efd]   
+[a3a14a82-76cd-4379-9032-f081ea3a2efd] NoMethodError (undefined method `[]' for nil:NilClass
+
+                @user_id = JWT.decode(user_token, Rails.application.secrets.secret_key_base[0])[0]["user_id"]
+                                                                                           ^^^):
+[a3a14a82-76cd-4379-9032-f081ea3a2efd]   
+[a3a14a82-76cd-4379-9032-f081ea3a2efd] app/controllers/concerns/application_controller.rb:18:in `current_user'
+[a3a14a82-76cd-4379-9032-f081ea3a2efd] app/controllers/concerns/application_controller.rb:10:in `is_signed_in'
+[a3a14a82-76cd-4379-9032-f081ea3a2efd] app/controllers/concerns/application_controller.rb:6:in `is_authorized'
+I, [2023-01-22T18:46:32.061042 #57935]  INFO -- : [054d5c45-7331-4860-83c5-65fa15798d6c] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:46:32 +0800
+I, [2023-01-22T18:46:32.062171 #57935]  INFO -- : [054d5c45-7331-4860-83c5-65fa15798d6c] Processing by UsersController#login as JSON
+I, [2023-01-22T18:46:32.062247 #57935]  INFO -- : [054d5c45-7331-4860-83c5-65fa15798d6c]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:46:32.338117 #57935]  INFO -- : [054d5c45-7331-4860-83c5-65fa15798d6c] Completed 500 Internal Server Error in 276ms (ActiveRecord: 0.3ms | Allocations: 1094)
+F, [2023-01-22T18:46:32.338439 #57935] FATAL -- : [054d5c45-7331-4860-83c5-65fa15798d6c]   
+[054d5c45-7331-4860-83c5-65fa15798d6c] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[054d5c45-7331-4860-83c5-65fa15798d6c]   
+[054d5c45-7331-4860-83c5-65fa15798d6c] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:46:33.491314 #57935]  INFO -- : [7f0f6727-d0ce-473d-82b4-59816a16ddfb] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:46:33 +0800
+I, [2023-01-22T18:46:33.493159 #57935]  INFO -- : [7f0f6727-d0ce-473d-82b4-59816a16ddfb] Processing by UsersController#login as JSON
+I, [2023-01-22T18:46:33.493220 #57935]  INFO -- : [7f0f6727-d0ce-473d-82b4-59816a16ddfb]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:46:33.778611 #57935]  INFO -- : [7f0f6727-d0ce-473d-82b4-59816a16ddfb] Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.7ms | Allocations: 1059)
+F, [2023-01-22T18:46:33.778946 #57935] FATAL -- : [7f0f6727-d0ce-473d-82b4-59816a16ddfb]   
+[7f0f6727-d0ce-473d-82b4-59816a16ddfb] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[7f0f6727-d0ce-473d-82b4-59816a16ddfb]   
+[7f0f6727-d0ce-473d-82b4-59816a16ddfb] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:46:39.986504 #57935]  INFO -- : [dac96378-7d56-4432-bd29-acd0872aa7ce] Started GET "/profile" for 127.0.0.1 at 2023-01-22 18:46:39 +0800
+I, [2023-01-22T18:46:39.987206 #57935]  INFO -- : [dac96378-7d56-4432-bd29-acd0872aa7ce] Processing by UsersController#user_profile as */*
+I, [2023-01-22T18:46:39.990005 #57935]  INFO -- : [dac96378-7d56-4432-bd29-acd0872aa7ce] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 865)
+F, [2023-01-22T18:46:39.991068 #57935] FATAL -- : [dac96378-7d56-4432-bd29-acd0872aa7ce]   
+[dac96378-7d56-4432-bd29-acd0872aa7ce] NoMethodError (undefined method `[]' for nil:NilClass
+
+                @user_id = JWT.decode(user_token, Rails.application.secrets.secret_key_base[0])[0]["user_id"]
+                                                                                           ^^^):
+[dac96378-7d56-4432-bd29-acd0872aa7ce]   
+[dac96378-7d56-4432-bd29-acd0872aa7ce] app/controllers/concerns/application_controller.rb:18:in `current_user'
+[dac96378-7d56-4432-bd29-acd0872aa7ce] app/controllers/concerns/application_controller.rb:10:in `is_signed_in'
+[dac96378-7d56-4432-bd29-acd0872aa7ce] app/controllers/concerns/application_controller.rb:6:in `is_authorized'
+I, [2023-01-22T18:46:44.733923 #57935]  INFO -- : [3a72d052-410c-474c-8d90-4f5f0b6e300d] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:46:44 +0800
+I, [2023-01-22T18:46:44.735773 #57935]  INFO -- : [3a72d052-410c-474c-8d90-4f5f0b6e300d] Processing by UsersController#login as JSON
+I, [2023-01-22T18:46:44.735913 #57935]  INFO -- : [3a72d052-410c-474c-8d90-4f5f0b6e300d]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:46:45.017306 #57935]  INFO -- : [3a72d052-410c-474c-8d90-4f5f0b6e300d] Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.6ms | Allocations: 1059)
+F, [2023-01-22T18:46:45.017725 #57935] FATAL -- : [3a72d052-410c-474c-8d90-4f5f0b6e300d]   
+[3a72d052-410c-474c-8d90-4f5f0b6e300d] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[3a72d052-410c-474c-8d90-4f5f0b6e300d]   
+[3a72d052-410c-474c-8d90-4f5f0b6e300d] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:48:26.466312 #58301]  INFO -- : [f298a98b-d7c7-4b9d-9541-473304ef4c84] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:48:26 +0800
+I, [2023-01-22T18:48:26.472357 #58301]  INFO -- : [f298a98b-d7c7-4b9d-9541-473304ef4c84] Processing by UsersController#login as JSON
+I, [2023-01-22T18:48:26.472515 #58301]  INFO -- : [f298a98b-d7c7-4b9d-9541-473304ef4c84]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:48:26.819898 #58301]  INFO -- : [f298a98b-d7c7-4b9d-9541-473304ef4c84] Completed 500 Internal Server Error in 344ms (ActiveRecord: 19.4ms | Allocations: 10502)
+F, [2023-01-22T18:48:26.822520 #58301] FATAL -- : [f298a98b-d7c7-4b9d-9541-473304ef4c84]   
+[f298a98b-d7c7-4b9d-9541-473304ef4c84] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[f298a98b-d7c7-4b9d-9541-473304ef4c84]   
+[f298a98b-d7c7-4b9d-9541-473304ef4c84] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:48:40.468518 #58301]  INFO -- : [359901d0-3acf-4168-a963-263a3ff49afd] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:48:40 +0800
+I, [2023-01-22T18:48:40.484296 #58301]  INFO -- : [359901d0-3acf-4168-a963-263a3ff49afd] Processing by UsersController#login as JSON
+I, [2023-01-22T18:48:40.484435 #58301]  INFO -- : [359901d0-3acf-4168-a963-263a3ff49afd]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:48:40.768652 #58301]  INFO -- : [359901d0-3acf-4168-a963-263a3ff49afd] Completed 500 Internal Server Error in 284ms (ActiveRecord: 0.3ms | Allocations: 1084)
+F, [2023-01-22T18:48:40.769687 #58301] FATAL -- : [359901d0-3acf-4168-a963-263a3ff49afd]   
+[359901d0-3acf-4168-a963-263a3ff49afd] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[359901d0-3acf-4168-a963-263a3ff49afd]   
+[359901d0-3acf-4168-a963-263a3ff49afd] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T18:48:47.288780 #58301]  INFO -- : [b94be48e-cc5e-49c7-a025-8740e4c4684a] Started POST "/users" for 127.0.0.1 at 2023-01-22 18:48:47 +0800
+I, [2023-01-22T18:48:47.290706 #58301]  INFO -- : [b94be48e-cc5e-49c7-a025-8740e4c4684a] Processing by UsersController#create as JSON
+I, [2023-01-22T18:48:47.290797 #58301]  INFO -- : [b94be48e-cc5e-49c7-a025-8740e4c4684a]   Parameters: {"user"=>{"username"=>"Jane", "password"=>"[FILTERED]", "first_name"=>"Jane", "last_name"=>"Tan"}}
+I, [2023-01-22T18:48:47.577250 #58301]  INFO -- : [b94be48e-cc5e-49c7-a025-8740e4c4684a] Completed 201 Created in 286ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 1869)
+I, [2023-01-22T18:48:51.441076 #58301]  INFO -- : [12bc2af6-c033-4f92-bea4-9d0480f208c2] Started POST "/login/" for 127.0.0.1 at 2023-01-22 18:48:51 +0800
+I, [2023-01-22T18:48:51.443644 #58301]  INFO -- : [12bc2af6-c033-4f92-bea4-9d0480f208c2] Processing by UsersController#login as JSON
+I, [2023-01-22T18:48:51.443815 #58301]  INFO -- : [12bc2af6-c033-4f92-bea4-9d0480f208c2]   Parameters: {"user"=>{"username"=>"Jane", "password"=>"[FILTERED]"}}
+I, [2023-01-22T18:48:51.724112 #58301]  INFO -- : [12bc2af6-c033-4f92-bea4-9d0480f208c2] Completed 500 Internal Server Error in 280ms (ActiveRecord: 0.5ms | Allocations: 1074)
+F, [2023-01-22T18:48:51.724495 #58301] FATAL -- : [12bc2af6-c033-4f92-bea4-9d0480f208c2]   
+[12bc2af6-c033-4f92-bea4-9d0480f208c2] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[12bc2af6-c033-4f92-bea4-9d0480f208c2]   
+[12bc2af6-c033-4f92-bea4-9d0480f208c2] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:10:07.288689 #59136]  INFO -- : [e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:10:07 +0800
+I, [2023-01-22T19:10:07.294943 #59136]  INFO -- : [e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6] Processing by UsersController#login as JSON
+I, [2023-01-22T19:10:07.295150 #59136]  INFO -- : [e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:10:07.631390 #59136]  INFO -- : [e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6] Completed 500 Internal Server Error in 334ms (ActiveRecord: 24.7ms | Allocations: 10512)
+F, [2023-01-22T19:10:07.633587 #59136] FATAL -- : [e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6]   
+[e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6]   
+[e7acf8cb-f09f-4a76-933a-5fd4d27e6bb6] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:10:08.694987 #59136]  INFO -- : [b43bdff0-1229-485f-a406-49eff5ababa8] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:10:08 +0800
+I, [2023-01-22T19:10:08.715163 #59136]  INFO -- : [b43bdff0-1229-485f-a406-49eff5ababa8] Processing by UsersController#login as JSON
+I, [2023-01-22T19:10:08.715300 #59136]  INFO -- : [b43bdff0-1229-485f-a406-49eff5ababa8]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:10:08.898653 #59136]  INFO -- : [6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:10:08 +0800
+I, [2023-01-22T19:10:08.899372 #59136]  INFO -- : [6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9] Processing by UsersController#login as JSON
+I, [2023-01-22T19:10:08.899396 #59136]  INFO -- : [6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:10:08.994816 #59136]  INFO -- : [b43bdff0-1229-485f-a406-49eff5ababa8] Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.7ms | Allocations: 4486)
+F, [2023-01-22T19:10:08.995178 #59136] FATAL -- : [b43bdff0-1229-485f-a406-49eff5ababa8]   
+[b43bdff0-1229-485f-a406-49eff5ababa8] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[b43bdff0-1229-485f-a406-49eff5ababa8]   
+[b43bdff0-1229-485f-a406-49eff5ababa8] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:10:09.088602 #59136]  INFO -- : [635b8307-e99d-4b8d-b705-734d198d08b0] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:10:09 +0800
+I, [2023-01-22T19:10:09.088928 #59136]  INFO -- : [635b8307-e99d-4b8d-b705-734d198d08b0] Processing by UsersController#login as JSON
+I, [2023-01-22T19:10:09.088959 #59136]  INFO -- : [635b8307-e99d-4b8d-b705-734d198d08b0]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:10:09.178090 #59136]  INFO -- : [6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9] Completed 500 Internal Server Error in 279ms (ActiveRecord: 8.7ms | Allocations: 6210)
+F, [2023-01-22T19:10:09.178511 #59136] FATAL -- : [6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9]   
+[6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9]   
+[6b2dfd5e-f900-4ce1-aff6-aa6a6315d3f9] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:10:09.332476 #59136]  INFO -- : [635b8307-e99d-4b8d-b705-734d198d08b0] Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.3ms | Allocations: 2840)
+F, [2023-01-22T19:10:09.332744 #59136] FATAL -- : [635b8307-e99d-4b8d-b705-734d198d08b0]   
+[635b8307-e99d-4b8d-b705-734d198d08b0] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[635b8307-e99d-4b8d-b705-734d198d08b0]   
+[635b8307-e99d-4b8d-b705-734d198d08b0] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:11:13.210454 #59136]  INFO -- : [9432ea2f-7740-426c-9a98-e766c056066c] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:11:13 +0800
+I, [2023-01-22T19:11:13.212392 #59136]  INFO -- : [9432ea2f-7740-426c-9a98-e766c056066c] Processing by UsersController#login as JSON
+I, [2023-01-22T19:11:13.212444 #59136]  INFO -- : [9432ea2f-7740-426c-9a98-e766c056066c]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:11:13.481321 #59136]  INFO -- : [9432ea2f-7740-426c-9a98-e766c056066c] Completed 500 Internal Server Error in 269ms (ActiveRecord: 0.3ms | Allocations: 1074)
+F, [2023-01-22T19:11:13.481824 #59136] FATAL -- : [9432ea2f-7740-426c-9a98-e766c056066c]   
+[9432ea2f-7740-426c-9a98-e766c056066c] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[9432ea2f-7740-426c-9a98-e766c056066c]   
+[9432ea2f-7740-426c-9a98-e766c056066c] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:11:28.282096 #59136]  INFO -- : [ea4150e5-1fe7-43fe-88d5-1c20557b4d84] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:11:28 +0800
+I, [2023-01-22T19:11:28.284662 #59136]  INFO -- : [ea4150e5-1fe7-43fe-88d5-1c20557b4d84] Processing by UsersController#login as JSON
+I, [2023-01-22T19:11:28.284864 #59136]  INFO -- : [ea4150e5-1fe7-43fe-88d5-1c20557b4d84]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:11:28.567812 #59136]  INFO -- : [ea4150e5-1fe7-43fe-88d5-1c20557b4d84] Completed 500 Internal Server Error in 283ms (ActiveRecord: 0.8ms | Allocations: 1074)
+F, [2023-01-22T19:11:28.568505 #59136] FATAL -- : [ea4150e5-1fe7-43fe-88d5-1c20557b4d84]   
+[ea4150e5-1fe7-43fe-88d5-1c20557b4d84] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[ea4150e5-1fe7-43fe-88d5-1c20557b4d84]   
+[ea4150e5-1fe7-43fe-88d5-1c20557b4d84] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:11:28.965950 #59136]  INFO -- : [db888c9e-fdf9-4bf1-98da-3dacb10c09ba] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:11:28 +0800
+I, [2023-01-22T19:11:28.968441 #59136]  INFO -- : [db888c9e-fdf9-4bf1-98da-3dacb10c09ba] Processing by UsersController#login as JSON
+I, [2023-01-22T19:11:28.968557 #59136]  INFO -- : [db888c9e-fdf9-4bf1-98da-3dacb10c09ba]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:11:29.253475 #59136]  INFO -- : [db888c9e-fdf9-4bf1-98da-3dacb10c09ba] Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.8ms | Allocations: 1059)
+F, [2023-01-22T19:11:29.253834 #59136] FATAL -- : [db888c9e-fdf9-4bf1-98da-3dacb10c09ba]   
+[db888c9e-fdf9-4bf1-98da-3dacb10c09ba] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[db888c9e-fdf9-4bf1-98da-3dacb10c09ba]   
+[db888c9e-fdf9-4bf1-98da-3dacb10c09ba] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:11:29.674664 #59136]  INFO -- : [1e0c2342-71ce-42c8-aa59-5f6bd346f67d] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:11:29 +0800
+I, [2023-01-22T19:11:29.676609 #59136]  INFO -- : [1e0c2342-71ce-42c8-aa59-5f6bd346f67d] Processing by UsersController#login as JSON
+I, [2023-01-22T19:11:29.676721 #59136]  INFO -- : [1e0c2342-71ce-42c8-aa59-5f6bd346f67d]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:11:29.962033 #59136]  INFO -- : [1e0c2342-71ce-42c8-aa59-5f6bd346f67d] Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.6ms | Allocations: 1063)
+F, [2023-01-22T19:11:29.962392 #59136] FATAL -- : [1e0c2342-71ce-42c8-aa59-5f6bd346f67d]   
+[1e0c2342-71ce-42c8-aa59-5f6bd346f67d] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[1e0c2342-71ce-42c8-aa59-5f6bd346f67d]   
+[1e0c2342-71ce-42c8-aa59-5f6bd346f67d] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:12:12.930940 #59548]  INFO -- : [20321eec-5cb7-4b8a-b6aa-18d0b36feee6] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:12:12 +0800
+I, [2023-01-22T19:12:12.937384 #59548]  INFO -- : [20321eec-5cb7-4b8a-b6aa-18d0b36feee6] Processing by UsersController#login as JSON
+I, [2023-01-22T19:12:12.937543 #59548]  INFO -- : [20321eec-5cb7-4b8a-b6aa-18d0b36feee6]   Parameters: {"user"=>{"username"=>"Jane", "password"=>"[FILTERED]"}}
+I, [2023-01-22T19:12:13.277697 #59548]  INFO -- : [20321eec-5cb7-4b8a-b6aa-18d0b36feee6] Completed 500 Internal Server Error in 340ms (ActiveRecord: 20.4ms | Allocations: 10508)
+F, [2023-01-22T19:12:13.282909 #59548] FATAL -- : [20321eec-5cb7-4b8a-b6aa-18d0b36feee6]   
+[20321eec-5cb7-4b8a-b6aa-18d0b36feee6] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[20321eec-5cb7-4b8a-b6aa-18d0b36feee6]   
+[20321eec-5cb7-4b8a-b6aa-18d0b36feee6] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T19:21:33.907664 #60024]  INFO -- : [593bf335-33f7-4a5b-86ec-ce7e17ca36f1] Started POST "/login/" for 127.0.0.1 at 2023-01-22 19:21:33 +0800
+I, [2023-01-22T19:21:33.912844 #60024]  INFO -- : [593bf335-33f7-4a5b-86ec-ce7e17ca36f1] Processing by UsersController#login as JSON
+I, [2023-01-22T19:21:33.913051 #60024]  INFO -- : [593bf335-33f7-4a5b-86ec-ce7e17ca36f1]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+D, [2023-01-22T19:21:33.965083 #60024] DEBUG -- : [593bf335-33f7-4a5b-86ec-ce7e17ca36f1]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Xunze"], ["LIMIT", 1]]
+I, [2023-01-22T19:21:34.255927 #60024]  INFO -- : [593bf335-33f7-4a5b-86ec-ce7e17ca36f1] Completed 500 Internal Server Error in 343ms (ActiveRecord: 25.2ms | Allocations: 10628)
+F, [2023-01-22T19:21:34.256313 #60024] FATAL -- : [593bf335-33f7-4a5b-86ec-ce7e17ca36f1]   
+[593bf335-33f7-4a5b-86ec-ce7e17ca36f1] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[593bf335-33f7-4a5b-86ec-ce7e17ca36f1]   
+[593bf335-33f7-4a5b-86ec-ce7e17ca36f1] app/controllers/concerns/users_controller.rb:24:in `login'
