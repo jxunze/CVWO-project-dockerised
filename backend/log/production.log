@@ -322,3 +322,48 @@ F, [2023-01-22T19:21:34.256313 #60024] FATAL -- : [593bf335-33f7-4a5b-86ec-ce7e1
                                                                                             ^^^):
 [593bf335-33f7-4a5b-86ec-ce7e17ca36f1]   
 [593bf335-33f7-4a5b-86ec-ce7e17ca36f1] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T23:24:31.630085 #29216]  INFO -- : [db622f02-b068-4c5e-9b2a-bc5eeb5f89c6] Started GET "/posts?order=0&search=" for 127.0.0.1 at 2023-01-22 23:24:31 +0800
+I, [2023-01-22T23:24:31.633688 #29216]  INFO -- : [db622f02-b068-4c5e-9b2a-bc5eeb5f89c6] Processing by PostsController#index as */*
+I, [2023-01-22T23:24:31.633862 #29216]  INFO -- : [db622f02-b068-4c5e-9b2a-bc5eeb5f89c6]   Parameters: {"order"=>"0", "search"=>""}
+D, [2023-01-22T23:24:31.709191 #29216] DEBUG -- : [db622f02-b068-4c5e-9b2a-bc5eeb5f89c6]   [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "users" ON "users"."id" = "posts"."user_id" WHERE (body ILIKE '%%' OR title ILIKE '%%' OR username ILIKE '%%') ORDER BY "posts"."created_at" DESC[0m
+I, [2023-01-22T23:24:31.709719 #29216]  INFO -- : [db622f02-b068-4c5e-9b2a-bc5eeb5f89c6] Completed 200 OK in 76ms (Views: 2.7ms | ActiveRecord: 38.6ms | Allocations: 6328)
+I, [2023-01-22T23:24:41.928813 #29216]  INFO -- : [313b164e-4538-4964-8659-57eb03140749] Started POST "/posts" for 127.0.0.1 at 2023-01-22 23:24:41 +0800
+I, [2023-01-22T23:24:41.931031 #29216]  INFO -- : [313b164e-4538-4964-8659-57eb03140749] Processing by PostsController#create as */*
+I, [2023-01-22T23:24:41.931454 #29216]  INFO -- : [313b164e-4538-4964-8659-57eb03140749]   Parameters: {"post"=>{"title"=>"f", "body"=>"f"}}
+I, [2023-01-22T23:24:41.935349 #29216]  INFO -- : [313b164e-4538-4964-8659-57eb03140749] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1284)
+F, [2023-01-22T23:24:41.953544 #29216] FATAL -- : [313b164e-4538-4964-8659-57eb03140749]   
+[313b164e-4538-4964-8659-57eb03140749] NoMethodError (undefined method `[]' for nil:NilClass
+
+    @user_id = JWT.decode(user_token, Rails.application.secrets.secret_key_base[0])[0]["user_id"]
+                                                                               ^^^):
+[313b164e-4538-4964-8659-57eb03140749]   
+[313b164e-4538-4964-8659-57eb03140749] app/controllers/concerns/posts_controller.rb:26:in `create'
+I, [2023-01-22T23:24:46.079398 #29216]  INFO -- : [311e75a7-271a-4ec1-ac66-9ccb03d22be8] Started GET "/posts?order=0&search=" for 127.0.0.1 at 2023-01-22 23:24:46 +0800
+I, [2023-01-22T23:24:46.102987 #29216]  INFO -- : [311e75a7-271a-4ec1-ac66-9ccb03d22be8] Processing by PostsController#index as */*
+I, [2023-01-22T23:24:46.103341 #29216]  INFO -- : [311e75a7-271a-4ec1-ac66-9ccb03d22be8]   Parameters: {"order"=>"0", "search"=>""}
+D, [2023-01-22T23:24:46.113403 #29216] DEBUG -- : [311e75a7-271a-4ec1-ac66-9ccb03d22be8]   [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "users" ON "users"."id" = "posts"."user_id" WHERE (body ILIKE '%%' OR title ILIKE '%%' OR username ILIKE '%%') ORDER BY "posts"."created_at" DESC[0m
+I, [2023-01-22T23:24:46.113735 #29216]  INFO -- : [311e75a7-271a-4ec1-ac66-9ccb03d22be8] Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 2.6ms | Allocations: 576)
+I, [2023-01-22T23:24:51.025188 #29216]  INFO -- : [98d56abe-162e-4804-b2c1-3f126b4b6092] Started POST "/login/" for 127.0.0.1 at 2023-01-22 23:24:51 +0800
+I, [2023-01-22T23:24:51.034657 #29216]  INFO -- : [98d56abe-162e-4804-b2c1-3f126b4b6092] Processing by UsersController#login as JSON
+I, [2023-01-22T23:24:51.034997 #29216]  INFO -- : [98d56abe-162e-4804-b2c1-3f126b4b6092]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+D, [2023-01-22T23:24:51.057424 #29216] DEBUG -- : [98d56abe-162e-4804-b2c1-3f126b4b6092]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Xunze"], ["LIMIT", 1]]
+I, [2023-01-22T23:24:51.321457 #29216]  INFO -- : [98d56abe-162e-4804-b2c1-3f126b4b6092] Completed 500 Internal Server Error in 286ms (ActiveRecord: 2.6ms | Allocations: 5802)
+F, [2023-01-22T23:24:51.322403 #29216] FATAL -- : [98d56abe-162e-4804-b2c1-3f126b4b6092]   
+[98d56abe-162e-4804-b2c1-3f126b4b6092] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[98d56abe-162e-4804-b2c1-3f126b4b6092]   
+[98d56abe-162e-4804-b2c1-3f126b4b6092] app/controllers/concerns/users_controller.rb:24:in `login'
+I, [2023-01-22T23:24:52.649784 #29216]  INFO -- : [a1d25a67-a811-4e78-9e7f-9e081441afe1] Started POST "/login/" for 127.0.0.1 at 2023-01-22 23:24:52 +0800
+I, [2023-01-22T23:24:52.652092 #29216]  INFO -- : [a1d25a67-a811-4e78-9e7f-9e081441afe1] Processing by UsersController#login as JSON
+I, [2023-01-22T23:24:52.652539 #29216]  INFO -- : [a1d25a67-a811-4e78-9e7f-9e081441afe1]   Parameters: {"user"=>{"username"=>"Xunze", "password"=>"[FILTERED]"}}
+D, [2023-01-22T23:24:52.655313 #29216] DEBUG -- : [a1d25a67-a811-4e78-9e7f-9e081441afe1]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Xunze"], ["LIMIT", 1]]
+I, [2023-01-22T23:24:52.936773 #29216]  INFO -- : [a1d25a67-a811-4e78-9e7f-9e081441afe1] Completed 500 Internal Server Error in 284ms (ActiveRecord: 0.9ms | Allocations: 1103)
+F, [2023-01-22T23:24:52.937211 #29216] FATAL -- : [a1d25a67-a811-4e78-9e7f-9e081441afe1]   
+[a1d25a67-a811-4e78-9e7f-9e081441afe1] NoMethodError (undefined method `[]' for nil:NilClass
+
+          @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+                                                                                            ^^^):
+[a1d25a67-a811-4e78-9e7f-9e081441afe1]   
+[a1d25a67-a811-4e78-9e7f-9e081441afe1] app/controllers/concerns/users_controller.rb:24:in `login'
