@@ -19,7 +19,7 @@ To deploy locally, ensure that ports 3000 and 3001 on the local machine are avai
 ```
 git clone https://github.com/jxunze/CVWO-project-dockerised.git
 docker-compose build
-docker-compose docker-compose run web rails db:create db:migrate
+docker-compose run web rails db:create db:migrate
 docker-compose up
 ```
 
