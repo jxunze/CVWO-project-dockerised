@@ -14,7 +14,7 @@ const EditPostPage = () => {
 
   useEffect(() => {
     let token = localStorage.getItem("token");
-    const showPostURL = `http://localhost:3000/posts/${params.id}`;
+    const showPostURL = `https://cvwo-project.onrender.com/posts/${params.id}`;
     if (token) {
       fetch(showPostURL, {
         method: "GET",
@@ -37,7 +37,7 @@ const EditPostPage = () => {
 
   const onSubmit = (event, title, body) => {
     event.preventDefault();
-    const url = `http://localhost:3000/posts/${params.id}`;
+    const url = `https://cvwo-project.onrender.com/posts/${params.id}`;
 
     if (title.length === 0 || body.length === 0) return;
     const info = {

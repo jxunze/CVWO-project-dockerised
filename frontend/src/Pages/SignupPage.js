@@ -14,7 +14,7 @@ const SignupPage = () => {
     console.log("hit");
     let token = localStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:3000/profile", {
+      fetch("https://cvwo-project.onrender.com/profile", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ const SignupPage = () => {
   }, []);
 
   const signUp = (user) => {
-    fetch("http://localhost:3000/users", {
+    fetch("https://cvwo-project.onrender.com/users", {
       method: "POST",
       headers: {
         Accept: "application/json",

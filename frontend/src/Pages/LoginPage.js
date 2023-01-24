@@ -11,7 +11,7 @@ const LoginPage = () => {
   });
 
   const signIn = (user) => {
-    fetch("http://localhost:3000/login", {
+    fetch("https://cvwo-project.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
