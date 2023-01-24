@@ -13,6 +13,10 @@ services:
     command: /bin/bash -c "rm -f /tmp/server.pid && bundle exec rails server -b 0.0.0.0 -P /tmp/server.pid"
     volumes:
       - ./backend:/myapp
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST: db
     ports:
       - "3000:3000"
     depends_on:

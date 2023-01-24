@@ -19,7 +19,7 @@ const HomePage = () => {
   const user = localStorage.getItem("username");
 
   const getPosts = () => {
-    const url = `https://cvwo-project.onrender.com/posts?order=${orderIndex}&search=${search}`;
+    const url = `http://localhost:3000/posts?order=${orderIndex}&search=${search}`;
     let token = localStorage.getItem("token");
     if (token) {
       fetch(url, {
@@ -47,7 +47,7 @@ const HomePage = () => {
 
   const onSubmit = (event, title, body) => {
     event.preventDefault();
-    const url = "https://cvwo-project.onrender.com/posts";
+    const url = "http://localhost:3000/posts";
 
     if (title.length === 0 || body.length === 0) return;
     const info = {
@@ -98,7 +98,7 @@ const HomePage = () => {
   };
 
   const deletePost = (id) => {
-    const url = `https://cvwo-project.onrender.com/posts/${id}`;
+    const url = `hhttp://localhost:3000/posts/${id}`;
     const auth_token = localStorage.getItem("token");
     console.log(url);
 
