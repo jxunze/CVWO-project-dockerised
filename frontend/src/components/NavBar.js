@@ -24,9 +24,9 @@ function NavBar(prop) {
         </div>
         {prop.user ? (
           <div className="nav-elements">
-            <a href="#" onClick={LogOut} className="profile-menu">
+            <button onClick={LogOut} className="profile-menu">
               LogOut
-            </a>
+            </button>
           </div>
         ) : (
           <div className="profile-menu">You are not signed in.</div>

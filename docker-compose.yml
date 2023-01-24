@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    image: postgres:9.6-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - .backend/tmp/db:/var/lib/postgresql/data
+  web:
+    build: ./backend
+    command: /bin/bash -c "rm -f /tmp/server.pid && bundle exec rails server -b 0.0.0.0 -P /tmp/server.pid"
+    volumes:
+      - ./backend:/myapp
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  react-frontend:
+    container_name: react-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - './frontend/src:/app/src'
+    ports:
+      - "3001:3001"

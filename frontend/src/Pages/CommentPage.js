@@ -20,7 +20,7 @@ const CommentPage = () => {
 
   useEffect(() => {
     let token = localStorage.getItem("token");
-    const showPostURL = `https://cvwo-project.onrender.com/posts/${params.id}`;
+    const showPostURL = `http://localhost:3000/posts/${params.id}`;
     if (token) {
       fetch(showPostURL, {
         method: "GET",
@@ -45,7 +45,7 @@ const CommentPage = () => {
   useEffect(() => getComments(), [search, orderIndex]);
 
   const getComments = () => {
-    const url = `https://cvwo-project.onrender.com/comments/${params.id}?order=${orderIndex}&search=${search}`;
+    const url = `http://localhost:3000/comments/${params.id}?order=${orderIndex}&search=${search}`;
     let token = localStorage.getItem("token");
     if (token) {
       fetch(url, {
@@ -86,7 +86,7 @@ const CommentPage = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const url = `https://cvwo-project.onrender.com/comments`;
+    const url = `http://localhost:3000/comments`;
 
     if (newComment.length === 0) return;
 
@@ -122,7 +122,7 @@ const CommentPage = () => {
   };
 
   const deleteComment = (id) => {
-    const url = `https://cvwo-project.onrender.com/comments/${id}`;
+    const url = `http://localhost:3000/comments/${id}`;
     const auth_token = localStorage.getItem("token");
     console.log(url);
     fetch(url, {

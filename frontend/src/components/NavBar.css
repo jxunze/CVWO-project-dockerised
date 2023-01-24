@@ -40,5 +40,18 @@
 .profile-menu{
     text-decoration: none;
     color:rgba(0, 0, 0, 0.8);
+    background-color: aliceblue;
+    border-color: none;
+    box-shadow: none;
+    border-width: 0px;
 }
 
+.profile-menu:hover{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.8);
+    background-color: aliceblue;
+    color: darkcyan;
+    border-color: none;
+    box-shadow: none;
+    border-width: 0px;
+}
